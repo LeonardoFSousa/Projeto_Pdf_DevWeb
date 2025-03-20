@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# 📌 Projeto: Gerenciador de Tarefas com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🚀 Descrição
+Este projeto é uma aplicação simples desenvolvida em React para gerenciamento de tarefas. Ele utiliza **React Hooks**, **localStorage** e manipulação de **arrays** para criar uma experiência interativa e persistente para o usuário.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Funcionalidades
+- ✅ Cadastro de tarefas
+- 📌 Lista dinâmica de tarefas usando `map`
+- 💾 Persistência de dados no `localStorage`
+- ⚛️ Utilização de `useState` e `useEffect`
+- 🎨 Personalização da interface com escolha de cores
+- 👤 Pergunta inicial ao usuário para salvar seu nome e exibir na tela
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tecnologias Utilizadas
+- ⚛️ React.js
+- 📜 JavaScript (ES6+)
+- 🎨 HTML5 / CSS3
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Estrutura do Projeto
+```
+📂 src
+ ┣ 📂 components
+ ┃ ┗ 📜 Cadastro.js
+ ┣ 📜 index.js
+ ┣ 📜 App.js
+ ┣ 📜 styles.css
+ ┗ 📜 index.html
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📥 Instalação e Execução
+### ✅ Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/) instalado
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📌 Passos para rodar o projeto
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
+2. Entre na pasta do projeto:
+   ```sh
+   cd nome-do-repositorio
+   ```
+3. Instale as dependências:
+   ```sh
+   npm install
+   ```
+4. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm start
+   ```
+5. Acesse o projeto no navegador: `http://localhost:3000/`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🎮 Como Usar
+1. **👤 Nome do Usuário:** Ao abrir o site, um `alert` perguntará o seu nome. Esse nome será salvo no `localStorage`.
+2. **📝 Cadastro de Tarefas:** Insira o nome da tarefa no campo de entrada e clique em "Registrar" para adicioná-la à lista.
+3. **💾 Lista Persistente:** As tarefas adicionadas permanecerão salvas, mesmo que a página seja recarregada.
+4. **🎨 Escolha de Cor:** Selecione uma cor nos radio buttons para mudar o fundo da página.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ⚛️ Hooks Utilizados
+- `useState`: Gerenciamento de estados para tarefas, nome do usuário e cor do fundo.
+- `useEffect`: Sincronização de estados com `localStorage` para manter os dados persistentes.
